@@ -1,0 +1,255 @@
+/* Geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Navbar */
+.navbar {
+  width: 98%;
+  background-color: #054f77;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.navbar .logout {
+  padding: 5px 10px;
+  margin-left: 50px;
+  margin-right: 20px;
+  background-color: #80acc5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar .logout:hover {
+  background-color: #ff1a1a;
+}
+
+/* Ajustar espaçamento do container com a navbar */
+.container {
+  margin-top: 60px;
+}
+
+/* Estilização do calendário */
+.calendario {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1em;
+}
+
+.calendar th,
+.calendar td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.calendar th {
+  background-color: #4ab8ea;
+  color: white;
+}
+
+.calendar td {
+  background-color: #f9f9f9;
+}
+
+.calendar td.empty {
+  background-color: #eaeaea;
+}
+
+.calendar td:hover {
+  background-color: #cce5ff;
+  cursor: pointer;
+}
+
+/* Estilo para a seção abaixo do calendário */
+.calendar-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-actions .btn {
+  padding: 10px 20px;
+  background-color: #4ab8ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.calendar-actions .btn:hover {
+  background-color: #4ab8ea;
+}
+
+
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Menu Lateral */
+.sidebar {
+  width: 30%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.username {
+  margin: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  margin: 10px 0;
+  display: block;
+}
+
+/* Tela Principal */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.catalog-item {
+  width: calc(25% - 10px);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.item-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.item-title {
+  font-size: 1.2em;
+  margin: 10px 0 5px;
+}
+
+.item-description {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .catalog-item {
+    width: calc(50% - 10px);
+  }
+  .sidebar {
+    display: none;
+  }
+  .navbar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-item {
+    width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+
+  .navbar {
+    width: 80%;
+  }
+}

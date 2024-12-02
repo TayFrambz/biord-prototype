@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biord Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="imagex/png" href="./src/iconbiord.ico.ico">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">BIORD Store</div>
+    <nav>
+      <a href="#" id="nav-home">Início</a>
+      <button class="btn logout">Sair</button>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Menu Lateral -->
+    <aside class="sidebar">
+      <div class="avatar-section">
+        <img src="./src/user_avatar.png" alt="Avatar do usuário" class="avatar">
+        <h2 class="username">Usuário</h2>
+      </div>
+      <nav class="menu">
+        <a href="#" id="menu-catalogo">Catálogo</a>
+        <a href="#agendamento" id="menu-agendamento">Agendar Coleta</a>
+        <a href="#" id="menu-configuracoes">Configurações</a>
+      </nav>
+    </aside>
+
+    <!-- Tela Principal -->
+    <main class="content">
+      <!-- Catálogo -->
+      <section id="catalogo" class="catalog">
+        <div class="catalog-item">
+          <img src="src/1.png" alt="Foto do item" class="item-img">
+          <div class="item-info">
+            <h3 class="item-title">Hamburguer</h3>
+            <p class="item-description">Pão macio com carne suculenta, queijo e molhos ao gosto</p>
+            <button class="btn" onclick="showModal()">Resgatar</button>
+          </div>
+        </div>
+
+        <div class="catalog-item">
+            <img src="src/2.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Batata Frita</h3>
+              <p class="item-description">Fatias crocantes de batata fritas, perfeitas para acompanhar qualquer refeição</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/3.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Hot Roll</h3>
+              <p class="item-description">Sushi frito com arroz, peixe e vegetais, envolto em alga.</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/4.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Pastel</h3>
+              <p class="item-description">Massa crocante recheada com diversos sabores como carne, queijo e frango</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/5.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Coxinha</h3>
+              <p class="item-description">Massa empanada e frita, recheada com frango desfiado</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/6.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Kibe</h3>
+              <p class="item-description">Bolinho de trigo com carne moída, temperos e frito até ficar crocante</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/7.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Churros</h3>
+              <p class="item-description"> Massa doce e crocante, geralmente recheada com doce de leite ou chocolate</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/8.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Pizza</h3>
+              <p class="item-description">Massa assada coberta com molho de tomate, queijo e ingredientes variados</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/9.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Sorvete</h3>
+              <p class="item-description">Delicioso doce congelado, disponível em diversos sabores</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/10.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Acarajé</h3>
+              <p class="item-description">Bolinho frito de feijão-fradinho, recheado com camarão, vatapá e caruru</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/11.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Parmegiana</h3>
+              <p class="item-description">Carne ou frango empanado e coberto com molho de tomate e queijo derretido</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+
+          <div class="catalog-item">
+            <img src="src/12.png" alt="Foto do item" class="item-img">
+            <div class="item-info">
+              <h3 class="item-title">Frango Frito</h3>
+              <p class="item-description">Peças de frango empanadas e fritas até ficarem crocantes e douradas</p>
+              <button class="btn" onclick="showModal()">Resgatar</button>
+            </div>
+          </div>
+        
+        <!-- Replicar itens do catálogo -->
+        <!-- Adicione mais divs catalog-item aqui, totalizando 15 itens -->
+      </section>
+
+      <!-- Agendamento -->
+      <section id="agendamento" class="hidden">
+        <div class="agendamento-header">
+          <input type="text" placeholder="1L de óleo" class="input-data">
+          <button class="btn">Informar Volume</button>
+        </div>
+        <div class="calendario">
+            <table class="calendar">
+              <thead>
+                <tr>
+                  <th>Dom</th>
+                  <th>Seg</th>
+                  <th>Ter</th>
+                  <th>Qua</th>
+                  <th>Qui</th>
+                  <th>Sex</th>
+                  <th>Sáb</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="empty"></td>
+                  <td class="empty"></td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td class="empty"></td>
+                  <td class="empty"></td>
+                  <td class="empty"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <!-- Novo botão -->
+          <div class="calendar-actions">
+            <button class="btn">Confirmar Agendamento</button>
+          </div>
+          
+           
+          
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <p>Você não possui pontos para recuperar este cupom, deseja continuar sem desconto?</p>
+      <div class="modal-actions">
+        <button class="btn" onclick="closeModal()">Sim</button>
+        <button class="btn" onclick="closeModal()">Não</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
